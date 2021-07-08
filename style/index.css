@@ -1,1 +1,27 @@
 /* Add CSS styling here */
+
+*{
+    border: 1px solid black;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: lightblue;
+}
+h1{
+    color:red;
+}
+
+nav {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+}
