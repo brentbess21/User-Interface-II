@@ -6,13 +6,14 @@
 }
 html{
     font-size: 62.5%;
+    color:#353535;
 }
 header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     background-color: #284b63;
     height: 75px;
     padding: 15px 0;
@@ -20,17 +21,26 @@ header{
 h1{
     color:white;
     font-family: 'Zen Tokyo Zoo', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     margin: 0 20px;
 
 }
 
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+    letter-spacing: 3px;
+    color:#284b63;
+    text-shadow: 1px 1px grey;
+    margin: 15px 0;
+}
+
 nav {
     display: flex;
     flex-flow: row nowrap;
-    margin-top:6px;
+    margin-top:3px;
 }
 
 nav a {
@@ -40,4 +50,44 @@ nav a {
     text-decoration: none;
     color: white;
     padding: 5px 30px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 20px;
+    width: 100%;
+}
+
+.info img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.bioContainer {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+    height: 300px;
+}
+
+.bioContainer a {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-decoration: none;
+    background-color: #3c6e71;
+    width: 120px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 12px 30px;
+    color: white;
+    margin: 15px 0;
+}
+
+.bioContainer p {
+    font-size: 2rem;
+    margin: 15px 0;
 }
