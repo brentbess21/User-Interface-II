@@ -1,1 +1,301 @@
-/* Add CSS styling here */
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    letter-spacing: 5px;
+    color: #284B63;
+    text-shadow: 1px 1px grey;
+
+}
+
+h2 {
+    font-family: 'Zen Tokyo Zoo', cursive;
+    font-size: 1.6rem;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    
+}
+
+a {
+    font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+h3, a {
+    font-size: 2rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+
+/* Header Section Styles */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    Background-color: #284B63;
+    color: white;
+    height: 60px;
+}
+
+header h1 {
+    width: 40%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 20px;
+}
+
+nav a {
+    width: 15%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+nav a:hover {
+    background-color: white;
+    color:#284B63
+}
+
+
+
+
+/* Image and Info Styles */
+
+.imageAndInfo {
+    display: flex;
+    margin-top: 20px;
+    height: 300px;
+}
+
+.profilePic {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    width: 30%;
+
+}
+.profilePic img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+
+}
+
+.info a {
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3C6E71;
+    border-radius: 10px;
+    color: white;
+    margin: 5% 0;
+    padding-top: 5px;
+    transition: .3s;
+}
+
+.info a:hover {
+    border: 2px solid #3C6E71;
+    color: #3C6E71;
+    background-color: white;
+}
+
+/* Portfolio Styling */
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1.5% 0;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.item p {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.itemImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://picsum.photos/200);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.itemImage a {
+    display: none;
+    color: white;
+    background-color: #3C6E71;
+    text-decoration: none;
+    width: 45%;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 2px;
+}
+
+.itemImage:hover a {
+    display: inline;
+    color: white;
+    background-color: #3C6E71;
+    transition: 1s;
+}
+
+
+/* Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    margin-top: 50px;
+    background-color:#284B63;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    color: white;
+}
+
+footer a {
+    width: 12%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+footer a:hover {
+    background-color: white;
+    color:#284B63
+}
+
+
+/* Media Queries */
+
+/* Tablet */
+@media(max-width:800px){
+
+}
+
+/* Phone */
+@media(max-width:500px){
+    header{
+        flex-direction: column;
+        height: 200px;
+        margin-bottom: 80px;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 45%;
+    }
+
+    header h2 {
+        margin-top: 20px;
+    }
+
+    .row {
+        flex-wrap: wrap;
+    }
+
+    .portfolio {
+        margin: 75px 0;
+    }
+
+
+
+}
